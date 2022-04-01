@@ -14,14 +14,14 @@
         android:layout_height="163dp"
         android:layout_gravity="end"
         android:ellipsize="start"
-        android:text="Hello World!"
+        android:text=""
         android:textColor="@color/white"
         android:textSize="40sp" />
 
     <TextView
         android:id="@+id/math_res"
         android:layout_width="match_parent"
-        android:layout_height="83dp"
+        android:layout_height="81dp"
         android:layout_gravity="end"
         android:ellipsize="end"
         android:singleLine="true"
@@ -55,11 +55,13 @@
 
             <TextView
                 style="@style/CalculatorButton2"
+                android:id="@+id/buttonRoot"
                 android:text="√"
                 android:textSize="40sp" />
 
             <TextView
                 style="@style/CalculatorButton2"
+                android:id="@+id/buttonPercent"
                 android:textSize="40sp"
                 android:text="%"
                 />
@@ -75,22 +77,26 @@
 
             <TextView
                 style="@style/CalculatorButton2"
+                android:id="@+id/buttonAllClean"
                 android:text="AC"
                 android:textSize="25sp"
                 />
             <TextView
                 style="@style/CalculatorButton2"
+                android:id="@+id/buttonBracketOpen"
                 android:text="("
                 android:textSize="40sp"
 
                 />
             <TextView
                 style="@style/CalculatorButton2"
+                android:id="@+id/buttonBracketClose"
                 android:text=")"
                 android:textSize="40sp"
                 />
             <TextView
                 style="@style/CalculatorButton2"
+                android:id="@+id/buttonDivide"
                 android:textSize="40sp"
                 android:text="/"
                 />
@@ -106,18 +112,22 @@
 
             <TextView
                 style="@style/CalculatorButton"
+                android:id="@+id/button7"
                 android:text="7"
                 />
             <TextView
                 style="@style/CalculatorButton"
+                android:id="@+id/button8"
                 android:text="8"
                 />
             <TextView
                 style="@style/CalculatorButton"
+                android:id="@+id/button9"
                 android:text="9"
                 />
             <TextView
                 style="@style/CalculatorButton2"
+                android:id="@+id/buttonMultiply"
                 android:textSize="40sp"
                 android:text="*"
                 />
@@ -133,18 +143,22 @@
 
             <TextView
                 style="@style/CalculatorButton"
+                android:id="@+id/button4"
                 android:text="4"
                 />
             <TextView
                 style="@style/CalculatorButton"
+                android:id="@+id/button5"
                 android:text="5"
                 />
             <TextView
                 style="@style/CalculatorButton"
+                android:id="@+id/button6"
                 android:text="6"
                 />
             <TextView
                 style="@style/CalculatorButton2"
+                android:id="@+id/buttonMinus"
                 android:textSize="40sp"
                 android:text="-"
                 />
@@ -160,18 +174,22 @@
 
             <TextView
                 style="@style/CalculatorButton"
+                android:id="@+id/button1"
                 android:text="1"
                 />
             <TextView
                 style="@style/CalculatorButton"
+                android:id="@+id/button2"
                 android:text="2"
                 />
             <TextView
                 style="@style/CalculatorButton"
+                android:id="@+id/button3"
                 android:text="3"
                 />
             <TextView
                 style="@style/CalculatorButton2"
+                android:id="@+id/buttonPlus"
                 android:textSize="40sp"
                 android:text="+"
                 />
@@ -187,15 +205,18 @@
 
             <TextView
                 style="@style/CalculatorButton"
+                android:id="@+id/buttonDot"
                 android:textSize="50dp"
                 android:text="."
                 />
             <TextView
                 style="@style/CalculatorButton"
+                android:id="@+id/buttonZero"
                 android:text="0"
                 />
             <TextView
                 style="@style/CalculatorButton"
+                android:id="@+id/buttonBack"
                 android:textColor="#EF0202"
                 android:text="Back"
                 />
