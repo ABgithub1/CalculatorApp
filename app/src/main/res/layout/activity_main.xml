@@ -11,23 +11,33 @@
     <TextView
         android:id="@+id/math_op"
         android:layout_width="match_parent"
-        android:layout_height="163dp"
+        android:layout_height="140dp"
         android:layout_gravity="end"
         android:ellipsize="start"
+        android:gravity="end"
+        android:paddingLeft="15sp"
+        android:paddingTop="15sp"
+        android:paddingRight="15sp"
+        android:paddingBottom="15sp"
         android:text=""
         android:textColor="@color/white"
-        android:textSize="40sp" />
+        android:textSize="45sp" />
 
     <TextView
         android:id="@+id/math_res"
         android:layout_width="match_parent"
-        android:layout_height="81dp"
+        android:layout_height="107dp"
         android:layout_gravity="end"
         android:ellipsize="end"
+        android:gravity="end"
         android:singleLine="true"
-        android:text="Hello World!"
+        android:text=""
         android:textColor="@color/white"
-        android:textSize="30sp" />
+        android:textSize="45sp"
+        android:paddingRight="15sp"
+        android:paddingLeft="15sp"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"/>
 
     <LinearLayout
         android:layout_width="match_parent"

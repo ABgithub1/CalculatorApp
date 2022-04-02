@@ -2,7 +2,10 @@ package com.example.calculatorapp
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.example.calculatorapp.databinding.ActivityMainBinding
+import net.objecthunter.exp4j.ExpressionBuilder
+import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             buttonBracketOpen.setOnClickListener { setTextFields("(") }
             buttonBracketClose.setOnClickListener { setTextFields(")") }
             buttonDivide.setOnClickListener { setTextFields("/") }
-            buttonRoot.setOnClickListener { setTextFields("√") }
+            buttonRoot.setOnClickListener { setTextFields("sqrt") }
             buttonPercent.setOnClickListener { setTextFields("%") }
             buttonMultiply.setOnClickListener { setTextFields("*") }
             buttonMinus.setOnClickListener { setTextFields("-") }
@@ -49,8 +52,19 @@ class MainActivity : AppCompatActivity() {
             button9.setOnClickListener { setTextFields("9") }
 
             buttonEquals.setOnClickListener {
-                mathRes.text = "---"
+                try {
+                    val ex = ExpressionBuilder(mathOp.text.toString()).build()
+                    val res = ex.evaluate()
 
+                    val longRes = res.toLong()
+                    if (res == longRes.toDouble())
+                        mathRes.text = longRes.toString()
+                    else
+                        mathRes.text = res.toString()
+
+                } catch (e: Exception) {
+                    Log.d("Ошибка", "Сообщение:${e.message}")
+                }
             }
         }
 
